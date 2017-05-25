@@ -14,6 +14,7 @@ exports.getBookDetail = async function(ctx) {
     let bookPage = ctx.query.page;
     if (bookName && bookPage) {
         let detailMsg = await ctx.service.book.getDetail(bookName, bookPage)
+
         if (detailMsg) {
             ctx.body = JSON.stringify({
                 isSuccess: true,

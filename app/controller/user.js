@@ -1,9 +1,12 @@
 exports.register = async function(ctx) {
+
     let query = ctx.query;
     if (query.username && query.password && query.sex) {
 
         if (await ctx.service.user.register(query.username, query.password, query.sex)) {
-            ctx.body = "注册成功"
+            ctx.body = JSON.stringify({
+                isSuccess: true
+            })
             return;
         } else {
             ctx.helper.returnFail(ctx)

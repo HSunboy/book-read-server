@@ -26,3 +26,7 @@ exports.mysql = {
     app: true,
     agent: false
 }
+
+exports.security = {
+    domainWhiteList: ['http://localhost:8080'],
+}

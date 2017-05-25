@@ -1,25 +1,26 @@
 {
-    "name": "book-read-server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "egg-bin test",
-        "dev": "egg-bin dev",
-        "cov": "egg-bin cov",
-        "debug": "egg-bin debug"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "egg": "^1.1.0",
-        "egg-development-proxyagent": "^1.0.0",
-        "egg-mysql": "^3.0.0",
-        "egg-view-nunjucks": "^2.0.0"
-    },
-    "devDependencies": {
-        "egg-bin": "^3.2.1",
-        "egg-mock": "^3.2.0",
-        "supertest": "^3.0.0"
-    }
+  "name": "book-read-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "egg-bin test",
+    "dev": "egg-bin dev",
+    "cov": "egg-bin cov",
+    "debug": "egg-bin debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^1.1.0",
+    "egg-cors": "^1.1.0",
+    "egg-development-proxyagent": "^1.0.0",
+    "egg-mysql": "^3.0.0",
+    "egg-view-nunjucks": "^2.0.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^3.2.1",
+    "egg-mock": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
 }
